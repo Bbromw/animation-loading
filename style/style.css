@@ -1,5 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  font-size: 65.2%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 40%;
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .top {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .top .quares {
+  display: flex;
+  justify-content: space-between;
+  width: 125px;
+  height: 125px;
+}
+.container .top .quares .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+}
+.container .top .quares .col div {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: lightpink;
+}
+.container .top .quares .col .blue-circle {
   background-color: lightblue;
+}
+.container .top .quares .col .border-circle {
+  background-color: transparent;
+  border: 4px solid gray;
+}
+.container .top .quares .col .green-circle {
+  background-color: rgb(89, 135, 20);
+}
+.container .top .quares .col .small-circle {
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+  background-color: gray;
+}
+.container .top .quares .col .opacity-circle {
+  opacity: 0.2;
+  background-color: gray;
+}
+.container .top .quares .col .circle {
+  background-image: linear-gradient(45deg, lightblue, rgb(13, 98, 126));
+}
+.container .top .quares .col .something {
+  height: 73px;
+  background-color: transparent;
+  border: 4px lightpink solid;
+}
+.container .loding-section .loading-process {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.container .loding-section .loading-process .loading-bar {
+  flex: 1;
+  margin-right: 20px;
+}
+.container .loding-section .loading-process .loading-bar .percent-loading {
+  display: flex;
+  justify-content: space-between;
+}
+.container .loding-section .loading-process .loading-bar .bar {
+  width: 100%;
+  height: 5px;
+  border-radius: 2.5px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .loding-section .loading-process .loading-bar .bar .line {
+  width: 100%;
+  height: 5px;
+  background-color: gray;
+  border-radius: 2.5px;
+}
+.container .loding-section .loading-process .close-button i {
+  font-size: 2rem;
+  color: gray;
+}
+.container .loding-section .verified {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.container .loding-section .verified-img {
+  width: 25px;
+  margin-right: 5px;
+}
+.container .loding-section .verified-img img {
+  width: 100%;
+}
+.container .loding-section .google-logo {
+  margin-top: 96px;
+  display: flex;
+  justify-content: center;
+}
+.container .loding-section .google-logo .logo-container {
+  width: 250px;
+}
+.container .loding-section .google-logo .logo-container img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
