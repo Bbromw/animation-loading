@@ -93,7 +93,7 @@ body {
   border-radius: 2.5px;
   border: 1px solid gray;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 .container .loding-section .loading-process .loading-bar .bar .line {
@@ -101,6 +101,8 @@ body {
   height: 5px;
   background-color: gray;
   border-radius: 2.5px;
+  animation: loading 2s ease-in-out;
+  transition: animation 2s;
 }
 .container .loding-section .loading-process .close-button i {
   font-size: 2rem;
@@ -129,6 +131,15 @@ body {
 }
 .container .loding-section .google-logo .logo-container img {
   width: 100%;
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
