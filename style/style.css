@@ -13,132 +13,363 @@ body {
 }
 
 .container {
-  width: 40%;
-  max-width: 500px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 20px 20px 20px;
+  animation: gap 0.5s ease-in-out forwards 3s;
+}
+.container .box {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+.container .box .circle,
+.container .box .circle-extra {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.container .top {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container .top .quares {
-  display: flex;
-  justify-content: space-between;
-  width: 125px;
-  height: 125px;
-}
-.container .top .quares .col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  justify-content: space-between;
-}
-.container .top .quares .col div {
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: lightpink;
 }
-.container .top .quares .col .blue-circle {
-  background-color: lightblue;
+.container .box .circle-extra {
+  z-index: -1;
 }
-.container .top .quares .col .border-circle {
+.container .box-1 {
+  animation: waiting 0.5s linear, waiting 0.5s linear 2s;
+}
+.container .box-1 .circle {
+  background-color: rgb(63, 180, 220);
+  animation: bubble1 0.5s ease-in-out forwards 4s, moveRight1 0.5s ease-in-out forwards 5s, moveLeft1 0.5s ease-in-out forwards 6s;
+}
+.container .box-1 .circle-extra {
   background-color: transparent;
-  border: 4px solid gray;
+  border: 2px solid gray;
+  top: -200%;
+  transform: scale(0);
+  animation: present 0.5s ease-in-out forwards 5s, changeBackground1 1s ease-in-out forwards 5.5s;
 }
-.container .top .quares .col .green-circle {
-  background-color: rgb(89, 135, 20);
+.container .box-2 {
+  transform: scale(0);
+  transform-origin: center center;
+  animation: presentBox2 2s linear forwards 3s;
 }
-.container .top .quares .col .small-circle {
-  width: 15px;
-  height: 15px;
-  margin-top: 5px;
+.container .box-2 .circle {
   background-color: gray;
 }
-.container .top .quares .col .opacity-circle {
-  opacity: 0.2;
+.container .box-3 {
+  animation: waiting 0.5s linear 0.5s, waiting 0.5s linear 2.5s;
+}
+.container .box-3 .circle {
+  background-color: rgb(213, 56, 56);
+  animation: circleChangeFormat 0.5s ease-in-out forwards 3s, moveDown 0.5s ease-in-out forwards 3.5s, changeBackground 0.5s ease-in-out forwards 4s, moveRight3 0.5s ease-in-out forwards 4.5s, moveUp3 0.5s ease-in-out forwards 5s, moveBack 0.5s ease-in-out forwards 6.5s;
+}
+.container .box-3 .circle-extra {
+  transform: scale(0);
   background-color: gray;
+  animation: present 0.5s ease-in-out forwards 3.75s, moveDown 0.5s ease-in-out forwards 6.5s;
 }
-.container .top .quares .col .circle {
-  background-image: linear-gradient(45deg, lightblue, rgb(13, 98, 126));
+.container .box-4 {
+  transform: scale(0);
+  transform-origin: center center;
+  animation: present 0.5s ease-in-out forwards 3s;
 }
-.container .top .quares .col .something {
-  height: 73px;
+.container .box-4 .circle {
   background-color: transparent;
-  border: 4px lightpink solid;
+  border: 2px solid gray;
+  animation: bubble4 0.5s ease-in-out forwards 5.5s;
 }
-.container .loding-section .loading-process {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.4rem;
-}
-.container .loding-section .loading-process .loading-bar {
-  flex: 1;
-  margin-right: 20px;
-}
-.container .loding-section .loading-process .loading-bar .percent-loading {
-  display: flex;
-  justify-content: space-between;
-}
-.container .loding-section .loading-process .loading-bar .bar {
-  width: 100%;
-  height: 5px;
-  border-radius: 2.5px;
-  border: 1px solid gray;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-.container .loding-section .loading-process .loading-bar .bar .line {
-  width: 100%;
-  height: 5px;
+.container .box-4 .circle-extra {
   background-color: gray;
-  border-radius: 2.5px;
-  animation: loading 2s ease-in-out;
-  transition: animation 2s;
+  transform: scale(0);
+  animation: bubble1-4-7 0.5s ease-in-out forwards 6s;
 }
-.container .loding-section .loading-process .close-button i {
-  font-size: 2rem;
-  color: gray;
+.container .box-5 {
+  transform: scale(0);
+  transform-origin: center center;
+  animation: present 0.5s ease-in-out forwards 3s;
 }
-.container .loding-section .verified {
-  font-size: 1.4rem;
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
+.container .box-5 .circle {
+  background: linear-gradient(45deg, lightblue, #0874c0);
+  animation: rotate360 1.5s linear infinite;
 }
-.container .loding-section .verified-img {
-  width: 25px;
-  margin-right: 5px;
+.container .box-6 {
+  transform: scale(0);
+  transform-origin: center center;
 }
-.container .loding-section .verified-img img {
-  width: 100%;
+.container .box-7 {
+  animation: waiting 0.5s linear 1.5s;
 }
-.container .loding-section .google-logo {
-  margin-top: 96px;
-  display: flex;
-  justify-content: center;
+.container .box-7 .circle {
+  background-color: rgb(59, 201, 31);
+  animation: bubble1-4-7 0.5s ease-in-out forwards 3.5s, bubble1-4-7 0.5s ease-in-out forwards 5s;
 }
-.container .loding-section .google-logo .logo-container {
-  width: 250px;
+.container .box-8 {
+  transform: scale(0);
+  transform-origin: center center;
+  animation: present 0.5s ease-in-out forwards 3s;
 }
-.container .loding-section .google-logo .logo-container img {
-  width: 100%;
+.container .box-8 .circle {
+  background-color: gray;
+  animation: bubble8 0.5s ease-in-out forwards 4s;
+}
+.container .box-8 .circle-extra {
+  background-color: transparent;
+  border: 2px solid gray;
+  animation: moveLeft 0.5s ease-in-out forwards 4s, moveUp 0.5s ease-in-out forwards 5s;
+}
+.container .box-9 {
+  animation: waiting 0.5s linear 1s;
+}
+.container .box-9 .circle {
+  background-color: rgb(223, 210, 62);
+  animation: moveY 0.5s ease-in-out forwards 3.5s, changeBackground9 0.5s ease-in-out forwards 5.5s, moveBack9 0.5s ease-in-out forwards 6.5s;
 }
 
-@keyframes loading {
+@keyframes gap {
   0% {
-    width: 0%;
+    gap: 0;
   }
   100% {
+    gap: 20px;
+  }
+}
+@keyframes present {
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes waiting {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bubble1-4-7 {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes moveRight1 {
+  0% {
+    left: 0;
     width: 100%;
+  }
+  50% {
+    left: -200%;
+    width: 300%;
+  }
+  100% {
+    left: -200%;
+    width: 100%;
+  }
+}
+@keyframes moveLeft1 {
+  0% {
+    left: -200%;
+    width: 100%;
+  }
+  50% {
+    left: -200%;
+    width: 300%;
+  }
+  100% {
+    left: 0%;
+    width: 100%;
+  }
+}
+@keyframes moveBack {
+  0% {
+    left: 200%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+/*-extra*/
+@keyframes moveUp1 {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: -200%;
+  }
+}
+@keyframes changeBackground1 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.5);
+  }
+  50% {
+    background-color: rgb(59, 201, 31);
+    transform: scale(1);
+    border: none;
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes presentBox2 {
+  25% {
+    transform: scale(0.25);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes circleChangeFormat {
+  0% {
+    background-color: rgb(213, 56, 56);
+  }
+  100% {
+    background-color: transparent;
+    border: 2px solid rgb(213, 56, 56);
+  }
+}
+@keyframes moveDown {
+  0% {
+    top: 0;
+    height: 100%;
+  }
+  50% {
+    top: 0;
+    height: 300%;
+  }
+  100% {
+    top: 200%;
+    height: 100%;
+  }
+}
+@keyframes moveRight3 {
+  0% {
+    left: 0;
+    width: 100%;
+  }
+  50% {
+    left: 0;
+    width: 300%;
+  }
+  100% {
+    left: 200%;
+    width: 100%;
+  }
+}
+@keyframes moveUp3 {
+  100% {
+    top: 0%;
+  }
+}
+@keyframes changeBackground {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgb(213, 56, 56);
+  }
+}
+@keyframes bubble4 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes moveY {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 200%;
+  }
+}
+/*-extra*/
+@keyframes bubble8 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+@keyframes moveLeft {
+  0% {
+    left: 0;
+    width: 100%;
+  }
+  50% {
+    left: 0%;
+    width: 300%;
+  }
+  100% {
+    left: 200%;
+    width: 100%;
+  }
+}
+@keyframes moveUp {
+  0% {
+    top: 0;
+    height: 100%;
+  }
+  50% {
+    top: -200%;
+    height: 300%;
+  }
+  100% {
+    top: -200%;
+    height: 100%;
+  }
+}
+@keyframes changeBackground9 {
+  0% {
+    background-color: rgb(223, 210, 62);
+    transform: scale(1);
+  }
+  50% {
+    background-color: rgb(223, 210, 62);
+    transform: scale(0.5);
+  }
+  100% {
+    background-color: transparent;
+    border: 2px solid rgb(223, 210, 62);
+    transform: scale(1);
+  }
+}
+@keyframes moveBack9 {
+  0% {
+    top: 200%;
+  }
+  100% {
+    top: 0;
+    background-color: rgb(223, 210, 62);
   }
 }
 
