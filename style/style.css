@@ -1,8 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Error: expected "{".
+ *     ,
+ * 184 |             animation: loading 1s linear infinite;
+ *     |                                                  ^
+ *     '
+ *   scss\style.scss 184:50  root stylesheet */
 
 body {
   font-size: 65.2%;
@@ -93,7 +94,7 @@ body {
   border-radius: 2.5px;
   border: 1px solid gray;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 .container .loding-section .loading-process .loading-bar .bar .line {
@@ -101,34 +102,6 @@ body {
   height: 5px;
   background-color: gray;
   border-radius: 2.5px;
+  animation: loading 2s ease-in-out;
+  transition: animation 2s;
 }
-.container .loding-section .loading-process .close-button i {
-  font-size: 2rem;
-  color: gray;
-}
-.container .loding-section .verified {
-  font-size: 1.4rem;
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-}
-.container .loding-section .verified-img {
-  width: 25px;
-  margin-right: 5px;
-}
-.container .loding-section .verified-img img {
-  width: 100%;
-}
-.container .loding-section .google-logo {
-  margin-top: 96px;
-  display: flex;
-  justify-content: center;
-}
-.container .loding-section .google-logo .logo-container {
-  width: 250px;
-}
-.container .loding-section .google-logo .logo-container img {
-  width: 100%;
-}
-
-/*# sourceMappingURL=style.css.map */
