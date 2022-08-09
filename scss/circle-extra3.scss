@@ -93,19 +93,19 @@
         top: 40px;
     }
     90% {
-        background-color: gray;
+        background-color: red;
         transform: scale(1);
-        top: 40px;
+        top: 0px;
     }
     95% {
-        background-color: gray;
-        transform: scale(0);
+        background-color: red;
+        transform: scale(1);
         top: 0px;
         border: none;
     }
     100% {
-        background-color: gray;
-        transform: scale(0);
+        background-color: red;
+        transform: scale(1);
         top: 0px;
         border: none;
     }

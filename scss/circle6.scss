@@ -128,13 +128,13 @@
     }
     90% {
         background-color: gray;
-        transform: scale(0);
+        transform: scale(1);
         top: 0px;
         height: 20px;
     }
     95% {
         background-color: gray;
-        transform: scale(0);
+        transform: scale(1);
         top: 0px;
         height: 20px;
         border: none;
@@ -142,7 +142,7 @@
     100% {
         height: 20px;
         background-color: transparent;
-        transform: scale(0);
+        transform: scale(1);
         border: none;
         top: 0px; 
     }
