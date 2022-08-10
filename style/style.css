@@ -15,7 +15,7 @@
     left: 0;
     width: 20px;
   }
-  10% {
+  8.5% {
     background-color: rgb(24, 144, 184);
     transform: scale(1.5);
     left: 0;
@@ -39,7 +39,7 @@
     left: 0;
     width: 20px;
   }
-  30% {
+  28.5% {
     background-color: rgb(24, 144, 184);
     transform: scale(1.5);
     left: 0;
@@ -235,7 +235,7 @@
     left: 0;
     height: 20px;
   }
-  15% {
+  13.5% {
     transform: scale(1.5);
     background-color: red;
     border: none;
@@ -267,7 +267,7 @@
     left: 0;
     height: 20px;
   }
-  35% {
+  33.5% {
     transform: scale(1.5);
     background-color: transparent;
     border: 2px red solid;
@@ -486,12 +486,6 @@
     border: none;
   }
 }
-.circle5 {
-  animation: circle5 10s linear infinite;
-  transform: scale(0);
-  background: linear-gradient(45deg, lightblue, rgb(19, 75, 230));
-}
-
 @keyframes circle5 {
   0% {
     transform: scale(0);
@@ -720,7 +714,7 @@
   20% {
     transform: scale(1);
   }
-  25% {
+  23.5% {
     transform: scale(1.5);
   }
   30% {
@@ -867,7 +861,7 @@
     top: 0;
     border: none;
   }
-  20% {
+  18.5% {
     background-color: yellow;
     transform: scale(1.5);
     top: 0;
@@ -915,7 +909,7 @@
     top: 40px;
     border: none;
   }
-  60% {
+  58.5% {
     background-color: yellow;
     transform: scale(1.5);
     top: 40px;
@@ -960,13 +954,13 @@
   95% {
     background-color: yellow;
     border: none;
-    transform: scale(1);
+    transform: scale(1.1);
     top: 0;
   }
   100% {
     background-color: yellow;
     border: none;
-    transform: scale(1);
+    transform: scale(1.1);
     top: 0;
   }
 }
@@ -1319,7 +1313,19 @@ body .container .box .circle4 {
   animation: circle4 10s linear infinite;
 }
 body .container .box .circle5 {
-  background-color: blue;
+  background-color: rgb(120, 178, 197);
+  transform: scale(0);
+  animation: circle5 10s linear infinite;
+}
+body .container .box .circle5::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(47, 129, 157);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  border-radius: 10px 10px 0 0;
 }
 body .container .box .circle6 {
   background-color: transparent;
