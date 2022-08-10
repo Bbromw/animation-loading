@@ -21,7 +21,7 @@
     left: 0;
     width: 20px;
   }
-  15% {
+  12% {
     background-color: rgb(24, 144, 184);
     transform: scale(1);
     left: 0;
@@ -45,7 +45,7 @@
     left: 0;
     width: 20px;
   }
-  35% {
+  32% {
     background-color: rgb(24, 144, 184);
     transform: scale(1);
     left: 0;
@@ -243,7 +243,7 @@
     left: 0;
     height: 20px;
   }
-  20% {
+  17% {
     transform: scale(1);
     background-color: red;
     border: none;
@@ -275,7 +275,7 @@
     top: 0;
     height: 20px;
   }
-  40% {
+  37% {
     transform: scale(1);
     background-color: transparent;
     border: 2px red solid;
@@ -717,7 +717,7 @@
   23.5% {
     transform: scale(1.5);
   }
-  30% {
+  27% {
     transform: scale(1);
   }
   35% {
@@ -867,7 +867,7 @@
     top: 0;
     border: none;
   }
-  25% {
+  22% {
     background-color: yellow;
     transform: scale(1);
     top: 0;
@@ -909,7 +909,7 @@
     top: 40px;
     border: none;
   }
-  58.5% {
+  60% {
     background-color: yellow;
     transform: scale(1.5);
     top: 40px;

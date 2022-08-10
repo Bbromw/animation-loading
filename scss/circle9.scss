@@ -40,12 +40,18 @@
     //   top: 0;
     //   border: none;
     // }
-    25% {
+    22% {
       background-color: yellow;
       transform: scale(1);
       top: 0;
       border: none;
     }
+    // 25% {
+    //   background-color: yellow;
+    //   transform: scale(1);
+    //   top: 0;
+    //   border: none;
+    // }
     30% {
       background-color: yellow;
       transform: scale(1);
@@ -82,18 +88,12 @@
       top: 40px;
       border: none;
     }
-    58.5% {
+    60% {
       background-color: yellow;
       transform: scale(1.5);
       top: 40px;
       border: none;
     }
-    // 60% {
-    //   background-color: yellow;
-    //   transform: scale(1.5);
-    //   top: 40px;
-    //   border: none;
-    // }
     65% {
       background-color: transparent;
       border: 2px solid yellow;
