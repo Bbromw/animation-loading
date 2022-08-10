@@ -55,7 +55,19 @@ body {
         animation: circle4 10s linear infinite;
       }     
       .circle5{
-        background-color: blue;
+        background-color: rgb(120, 178, 197);
+        transform: scale(0);
+        animation: circle5 10s linear infinite;
+        &::before{
+          content: "";
+          position: absolute;
+          background-color: rgb(47, 129, 157);
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 50%;
+          border-radius: 10px 10px 0 0;
+        }
       }
       .circle6{
         background-color: transparent;
