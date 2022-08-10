@@ -28,7 +28,7 @@
     //   transform: scale(1);
     // }
     35% {
-      transform: scale(1);
+      transform: scale(.5);
     }
     40% {
       transform: scale(1);
@@ -37,7 +37,7 @@
       transform: scale(1);
     }
     50% {
-      transform: scale(.5);
+      transform: scale(1);
     }
     55% {
       transform: scale(.5);
@@ -58,10 +58,10 @@
       transform: scale(1);
     }
     85% {
-      transform: scale(1);
+      transform: scale(.5);
     }
     90% {
-      transform: scale(.5);
+      transform: scale(1);
     }
     95% {
       border: none;
